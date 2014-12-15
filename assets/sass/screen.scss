@@ -1,0 +1,92 @@
+// @file
+// SASS partials imports for screen.css (OA Live master stylesheet for screens)
+// To compile this file
+// Note: SASS, Comapass, and Ruby on Rails must be installed
+// 1) Use the Gem's in the "oba_radix/Gemfile"
+// 2) config.rb file "oba_radix/config.rb"
+// 3) Issue command "bundle exec compass watch"
+// --------------------------------------------------
+
+// Bootstrap variable override file (must come before anything else)
+// --------------------------------------------------
+@import "bootstrap-sass/bootstrap-variables";
+
+// Mixins (allow override of compass_radix)
+// --------------------------------------------------
+@import "global/mixin";
+
+// SASS Shadows 
+// see @https://github.com/Ahrengot/sass-dropshadows.git
+// --------------------------------------------------
+@import "panels/sass-dropshadows/shadows";
+
+// COMPASS Imports Note: Gem
+// --------------------------------------------------
+@import "compass";
+@import "compass/css3";
+
+// Mixins and Variables
+// --------------------------------------------------
+@import "global/variable";
+@import "global/helper";
+@import "global/font";
+
+// Radix Variables and Mixins
+// --------------------------------------------------
+@import "compass_radix/stylesheets/compass_radix/variable";
+@import "compass_radix/stylesheets/compass_radix/mixin";
+
+// Bootstrap Sass version
+// bootstrap-sass.scss file contains all Bootstrap SASS import's (there are many)
+// @see https://github.com/thomas-mcdonald/bootstrap-sass
+// --------------------------------------------------
+@import "bootstrap-sass/assets/stylesheets/styles";
+
+// Radix Theme SASS
+// @see https://github.com/arshad/compass_radix.git
+// --------------------------------------------------
+@import "compass_radix/stylesheets/compass_radix/font";
+@import "compass_radix/stylesheets/compass_radix/layout";
+@import "compass_radix/stylesheets/compass_radix/modal";
+@import "compass_radix/stylesheets/compass_radix/structure";
+@import "compass_radix/stylesheets/compass_radix/menu";
+@import "compass_radix/stylesheets/compass_radix/page";
+@import "compass_radix/stylesheets/compass_radix/panel";
+@import "compass_radix/stylesheets/compass_radix/view";
+@import "compass_radix/stylesheets/compass_radix/form";
+@import "compass_radix/stylesheets/compass_radix/user";
+@import "compass_radix/stylesheets/compass_radix/node";
+@import "compass_radix/stylesheets/compass_radix/comment";
+@import "compass_radix/stylesheets/compass_radix/admin";
+@import "compass_radix/stylesheets/compass_radix/maintenance";
+
+// OpenAtrium Theme SASS
+// see @https://github.com/drupalprojects/openatrium.git
+// --------------------------------------------------
+@import "layout/layout";
+@import "layout/auto_widths";
+@import "layout/media_query_pulls";
+@import "base/page";
+@import "base/panel";
+@import "base/node";
+@import "base/view";
+@import "components/sub-menu";
+@import "components/structure";
+@import "components/menu";
+@import "components/form";
+@import "components/comment";
+@import "components/user";
+@import "components/navbar";
+@import "components/add-content-modal";
+@import "components/oa-pulls";
+@import "components/notifications";
+@import "components/table";
+@import "components/apps";
+
+// OA Live Panel Styles
+// --------------------------------------------------
+@import "panels/styles";
+
+// Custom OA Live styles
+// --------------------------------------------------
+@import "custom/styles";

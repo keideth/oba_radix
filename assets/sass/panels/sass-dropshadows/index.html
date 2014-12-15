@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="A bunch of SASS mixins and CSS classes for creating visually appealing shadows without images"/>
+	
+	<meta property="fb:admins" content="100000936142315">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+	<meta property="og:url" content="http://ahrengot.com/playground/css-drop-shadows/">
+	<meta property="og:site_name" content="Playground ‹ Jens Ahrengot Boddum">
+	<meta property="og:title" content="SASS drop shadows without images">
+	<meta property="og:description" content="A bunch of SASS mixins and CSS classes for creating visually appealing shadows without images">
+	<meta property="og:image" content="http://ahrengot.com/playground/css-drop-shadows/share-icon.png">
+
+	<link rel="publisher" href="https://plus.google.com/113475454566452427285/">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@ahrengot">
+	<meta name="twitter:creator" content="@ahrengot">
+	<meta name='twitter:image' content='http://ahrengot.com/playground/css-drop-shadows/share-icon.png'>
+	<meta name="twitter:description" content="A bunch of SASS mixins and CSS classes for creating visually appealing shadows without images">
+	<meta name="twitter:title" content="SASS drop shadows without images">
+	<meta name="twitter:url" content="http://ahrengot.com/playground/css-drop-shadows/">
+
+	<link rel="stylesheet" href="styles/css/shadows.css">
+	<link rel="stylesheet" href="styles/css/demo.css">
+
+	<title>SASS drop shadows without images</title>
+</head>
+
+<body>
+	<a href="https://github.com/Ahrengot/sass-dropshadows">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+	</a>
+
+	<div id="container">
+		<header>
+			<h1 class="emboss">SASS drop shadows without images</h1>
+			<p>A bunch of CSS classes and SASS mixins for creating resolution-independent crisp and visually appealing shadows without using any images</p>
+			<p>It's really simple to use these. Just add the CSS class or apply the mixin. For documentation <a href="https://github.com/Ahrengot/sass-dropshadows" target="_blank">head over to the Github page</a>&nbsp;&hellip;</p>
+		</header>
+		
+		<div id="main" role="main">
+			<div class="shadow">
+				<h2>Default</h2>
+				<p><code>.shadow</code></p>
+				<p><code>@include shadow();</code></p>
+			</div>
+			
+			<div class="shadow raised">
+				<h2>Raised</h2>
+				<p><code>.shadow.raised</code></p>
+				<p><code>@include shadow(raised);</code></p>
+			</div>
+
+			<div class="shadow perspective">
+				<h2>Perspective</h2>
+				<p><code>.shadow.perspective</code></p>
+				<p><code>@include shadow(perspective);</code></p>
+			</div>
+
+			<div class="shadow perspective-right">
+				<h2>Perspective right</h2>
+				<p><code>.shadow.perspective-right</code></p>
+				<p><code>@include shadow(perspective-right);</code></p>
+			</div>
+			
+			<div class="shadow curved">
+				<h2>Curved</h2>
+				<p><code>.shadow.curved</code></p>
+				<p><code>@include shadow(curved);</code></p>
+			</div>
+
+			<div class="shadow curved-top">
+				<h2>Curved top</h2>
+				<p><code>.shadow.curved-top</code></p>
+				<p><code>@include shadow(curved-top);</code></p>
+			</div>
+
+			<div class="shadow curved-bottom">
+				<h2>Curved bottom</h2>
+				<p><code>.shadow.curved-bottom</code></p>
+				<p><code>@include shadow(curved-bottom);</code></p>
+			</div>
+			
+			<div class="shadow curved-vertical">
+				<h2>Curved vertical</h2>
+				<p><code>.shadow.curved-vertical</code></p>
+				<p><code>@include shadow(curved-vertical);</code></p>
+			</div>
+			
+			<div class="shadow curved-vertical-left">
+				<h2>Curved vertical left</h2>
+				<p><code>.shadow.curved-vertical-left</code></p>
+				<p><code>@include shadow(curved-vertical-left);</code></p>
+			</div>
+
+			<div class="shadow curved-vertical-right">
+				<h2>Curved vertical right</h2>
+				<p><code>.shadow.curved-vertical-right</code></p>
+				<p><code>@include shadow(curved-vertical-right);</code></p>
+			</div>
+		</div>
+		
+		<footer>
+			<p class="share"><g:plusone size="standard" href="http://ahrengot.com/playground/css-drop-shadows/"></g:plusone> </p>
+			<small>Created by <a href="http://ahrengot.com/" rel="bookmark" target="_blank">Jens Ahrengot Boddum</a> based on <a href="http://nicolasgallagher.com/css-drop-shadows-without-images/" target="_blank">Nicolas Gallagher's CSS drop shadows</a></small>
+		</footer>
+	</div>
+	
+	<script>
+		/* 
+		 * Silly little code highlighter thingy
+		 */
+		var codeBlocks = document.getElementsByTagName("code");
+
+		for (var i = codeBlocks.length - 1; i >= 0; i--) {
+			var code = codeBlocks[i],
+				text = code.innerText,
+				find = /(@include)\s(\w+)\(([a-z|-]+)?\)/g,
+				replace = '<span class="function">$1</span> <span class="mixin">$2</span>(<span class="args">$3</span>)';
+			
+			code.innerHTML = text.replace(find, replace);
+		};
+	</script>
+
+  	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-38462738-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	
+	<script src="https://apis.google.com/js/plusone.js"></script>
+</body>
+</html>

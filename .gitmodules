@@ -1,0 +1,6 @@
+[submodule "assets/sass/bootstrap-sass"]
+	path = assets/sass/bootstrap-sass
+	url = https://github.com/twbs/bootstrap-sass.git
+[submodule "assets/sass/panels/sass-dropshadows"]
+	path = assets/sass/panels/sass-dropshadows
+	url = https://github.com/Ahrengot/sass-dropshadows.git
